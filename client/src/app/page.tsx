@@ -87,7 +87,9 @@ const Home = () => {
 
         const eventSource = new EventSource(url);
         let streamedContent = "";
-        let searchData = null;
+        //let searchData = null;
+        let searchData: SearchInfo | null = null;
+
         let hasReceivedContent = false;
 
         // Process incoming messages
